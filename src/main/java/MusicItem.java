@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.Objects;
 
 //super class
@@ -90,7 +91,7 @@ public abstract class MusicItem implements Comparable<MusicItem> {
     public int compareTo(MusicItem o) {
         //sort using title
         return title.compareTo(o.getTitle());
-
+        //Collections.sort(itemList);
     }
 
     @Override

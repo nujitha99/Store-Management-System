@@ -18,6 +18,7 @@ public class WestminsterMusicStoreManager implements StoreManager {
     private static Firestore db;
     private static final int count = 1000;
     public Double total;
+    private List<MusicItem> itemList = new ArrayList<MusicItem>();
 
     public WestminsterMusicStoreManager() {
         try {
@@ -28,7 +29,6 @@ public class WestminsterMusicStoreManager implements StoreManager {
     }
 
     //implement methods in store manager
-
 
     @Override
     public void addItem(MusicItem item) {
@@ -151,6 +151,13 @@ public class WestminsterMusicStoreManager implements StoreManager {
                 System.out.println("No such document!");
             }
         }
+    }
+
+    /*   lecture  */
+
+    @Override
+    public void testMethod() {
+        throw new UnsupportedOperationException("this method is not supported");
     }
 
 }
